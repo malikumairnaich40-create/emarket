@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /catalog
+Allow: /product/
+Allow: /blog/
+Allow: /brands
+Allow: /faq
+Allow: /contact
+
+Disallow: /admin/
+Disallow: /user/
+Disallow: /checkout
+Disallow: /cart
+Disallow: /compare/
+Disallow: /core/
+Disallow: /installer/
+
+Sitemap: /sitemap.xml

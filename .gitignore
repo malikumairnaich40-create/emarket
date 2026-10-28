@@ -1,0 +1,25 @@
+# Local environment and secrets
+core/.env
+core/.env.*
+!core/.env.example
+
+# Installed dependencies
+core/vendor/
+
+# Runtime logs and generated framework files
+core/storage/logs/*.log
+core/storage/framework/cache/data/*
+core/storage/framework/sessions/*
+core/storage/framework/views/*
+core/storage/framework/testing/*
+core/bootstrap/cache/*.php
+
+# OS metadata
+.DS_Store
+
+# Local database dump may contain environment-specific credentials
+installer/database.sql
+
+# Runtime public storage link
+/storage
+/core/public/storage
