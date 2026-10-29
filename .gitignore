@@ -20,6 +20,14 @@ core/bootstrap/cache/*.php
 # Local database dump may contain environment-specific credentials
 installer/database.sql
 
-# Runtime public storage link
-/storage
-/core/public/storage
+# Never ignore public assets and storage uploads
+!core/public/assets/**
+!core/public/images/**
+!core/public/uploads/**
+!storage/app/public/**
+!core/storage/app/public/**
+!assets/**
+
+# Runtime public storage link (only ignore the symlink itself if needed)
+# /storage
+# /core/public/storage
