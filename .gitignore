@@ -31,3 +31,7 @@ installer/database.sql
 # Runtime public storage link (only ignore the symlink itself if needed)
 # /storage
 # /core/public/storage
+
+storage/framework/*
+storage/logs/*
+storage/app/.gitignore
