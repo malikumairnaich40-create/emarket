@@ -47,7 +47,7 @@ $(function ($) {
 
 
         // announcement banner magnific popup
-        if (mainbs.is_announcement == 1) {
+        if (typeof mainbs !== 'undefined' && mainbs && mainbs.is_announcement == 1 && $('.announcement-banner').length && typeof $.fn.magnificPopup === 'function') {
             $('.announcement-banner').magnificPopup({
                 type: 'inline',
                 midClick: true,

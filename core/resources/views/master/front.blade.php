@@ -110,6 +110,19 @@
     @endif
     {{-- Facebook pixel End --}}
 
+    <style>
+        .popular-category-slider:not(.owl-loaded) {
+            display: flex !important;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 15px;
+            padding-bottom: 10px;
+        }
+        .popular-category-slider:not(.owl-loaded) .slider-item {
+            flex: 0 0 250px;
+            max-width: 250px;
+        }
+    </style>
 </head>
 <!-- Body-->
 
@@ -609,8 +622,8 @@ body_theme4 @endif
 
     <script>
         var mainbs = {!! $mainbs !!};
-        var decimal_separator = {{ json_encode($setting->decimal_separator) }};
-        var thousand_separator = {{ json_encode($setting->thousand_separator) }};
+        var decimal_separator = {!! json_encode($setting->decimal_separator) !!};
+        var thousand_separator = {!! json_encode($setting->thousand_separator) !!};
     </script>
 
     <script>
