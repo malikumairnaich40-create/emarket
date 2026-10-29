@@ -28,6 +28,10 @@ installer/database.sql
 !core/storage/app/public/**
 !assets/**
 
+# Local symlinks/junctions
+assets/images/
+core/public/assets/images/
+
 # Runtime public storage link (only ignore the symlink itself if needed)
 # /storage
 # /core/public/storage
